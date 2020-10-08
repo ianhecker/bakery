@@ -1,5 +1,5 @@
 This example will demonstrate how to setup your own multimodule monorepo.
-I've posted the code publicly at:https://github.com/ianhecker/bakery if you would rather just pull it than follow along.
+I've posted the code publicly at: https://github.com/ianhecker/bakery if you would rather just pull it than follow along.
 
 Let's say you have a repository about baking. It has modules: filling, crust, and bake. And a few packages, but we'll touch on those in a bit.
 ```bash
@@ -184,7 +184,7 @@ build: test bin
 ```
 
 I will mention one "gotcha" with bash subshells and changing directory into modules: you have to update paths accordingly.
-Notice how for build we point back one directory for the output with -o ../$(BAKERY)/$(BAKER).
+Notice how for build we point back one directory for the output with `-o ../$(BAKERY)/$(BAKER)`.
 
 Another "gotcha" to pay attention to is the order of go mod tidy.
 Make sure you go test and go mod tidy modules in the order that they import each other  in.
