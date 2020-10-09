@@ -1,5 +1,5 @@
 This example will demonstrate how to setup your own multimodule monorepo.
-I've posted the code publicly at: https://github.com/ianhecker/bakery if you would rather just pull it than follow along.
+The replace statements on the modules make this a semver-free multimodule repo.
 
 Let's say you have a repository about baking. It has modules: filling, crust, and bake. And a few packages, but we'll touch on those in a bit.
 ```bash
